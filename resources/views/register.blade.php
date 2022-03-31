@@ -51,7 +51,6 @@
                                 </div>
                             @enderror
                         </div>
-<<<<<<< HEAD
                         <div class="mt-1 form-floating">
                             <label for="peran" class="form-label">Peran</label>
                             <select class="form-select" required id="peran" name="peran" aria-label="Default select example">
@@ -63,38 +62,6 @@
                             <div class="valid-feedback">Valid.</div>
                             <div class="invalid-feedback">Please choose a state.</div>
                         </div>
-                        {{-- <label class="mt-2" for="pernah_wisata">Kota yang pernah kamu kunjungi
-=======
-                        <label class="mt-2" for="pernah_wisata">Kota yang pernah kamu kunjungi
->>>>>>> 01c3e14a184d1bd1dfa23f2df8971aa479883ea1
-                            (optional)</label>
-                        <div class="mt-1 form-floating">
-                            <input id="pernah_wisata" type="text" placeholder="Kota" class="flexdatalist form-control"
-                                data-min-length="0" data-searchContain="true" multiple="multiple" list="lokasi"
-                                data-limit-of-values='3' name="pernah_wisata">
-                            <datalist id="lokasi">
-                                @foreach ($provinsi as $p)
-                                    <option value="Apples">{{ $p->kota }}</option>
-                                @endforeach
-                            </datalist>
-                            <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
-                            <script src="{{ url('js/jquery.flexdatalist.min.js') }}"></script>
-                            <script>
-                                $('.flexdatalist-json').flexdatalist({
-                                    limitOfValues: 3,
-                                    searchContain: false,
-                                    valueProperty: 'iso2',
-                                    minLength: 0,
-                                    focusFirstResult: true,
-                                    selectionRequired: true,
-                                });
-                            </script>
-                            <label for="pernah_wisata"></label>
-<<<<<<< HEAD
-                        </div> --}}
-=======
-                        </div>
->>>>>>> 01c3e14a184d1bd1dfa23f2df8971aa479883ea1
 
                         <button class="mt-2 w-100 btn btn-lg btn-primary" type="submit">Daftar</button>
                     </form>
