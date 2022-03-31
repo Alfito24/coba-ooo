@@ -35,13 +35,8 @@
                         @csrf
                         <div class="form-floating">
                             <input type="email" name="email" class="form-control @error('email') is-invalid @enderror"
-<<<<<<< HEAD
                                 id="email" placeholder="name@example.com" value="{{ old('email') }}"
 >
-=======
-                                id="email" placeholder="name@example.com" value="{{ old('email') }}" autofocus
-                                required>
->>>>>>> 01c3e14a184d1bd1dfa23f2df8971aa479883ea1
                             <label for="email">Email</label>
                             @error('email')
                                 <div class="invalid-feedback">
