@@ -26,15 +26,14 @@ Route::get('/register', function () {
 });
 Route::post('/register', [RegisterController::class, 'store']);
 Route::post('/login', [LoginController::class, 'authenticate']);
-
-Route::group(['middleware'=>['auth', 'ValidateRole:2']], function(){
-    route::get('/admin', function () {
-        return view('admin');
-    });
-});
 Route::group(['middleware'=>['auth', 'ValidateRole:1']], function(){
     route::get('/pelanggan', function () {
         return view('pelanggan');
+    });
+});
+Route::group(['middleware'=>['auth', 'ValidateRole:2']], function(){
+    route::get('/admin', function () {
+        return view('admin');
     });
 });
 Route::group(['middleware'=>['auth', 'ValidateRole:3']], function(){
