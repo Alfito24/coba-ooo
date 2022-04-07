@@ -21,7 +21,7 @@ class LoginController extends Controller
         if(Auth::attempt($credentials)){
             $request->session()->regenerate();
             if(Auth::user()->peran==1){
-                return redirect()->back();
+                return redirect('/pelanggan');
             } else if(Auth::user()->peran==2){
                 return redirect('/admin');
             } else if(Auth::user()->peran==3){

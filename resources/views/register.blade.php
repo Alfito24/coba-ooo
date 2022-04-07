@@ -51,7 +51,7 @@
                                 </div>
                             @enderror
                         </div>
-                        <div class="mt-1 form-floating">
+                        <div class="mt-1 form-floating" style="display: none;">
                             <label for="peran" class="form-label">Peran</label>
                             <select class="form-select" required id="peran" name="peran" aria-label="Default select example">
                               <option value="">Please Choose</option>

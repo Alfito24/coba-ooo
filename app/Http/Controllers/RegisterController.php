@@ -22,6 +22,7 @@ class RegisterController extends Controller
          'password' => 'required|min:8|max:20'
      ]);
      $validatedData['password'] = Hash::make($validatedData['password']);
+     $validatedData['peran'] = 1;
      User::create($validatedData);
      $request->session()->flash('success', 'Registration was successful! Please Login to your account');
      return redirect('/login');
